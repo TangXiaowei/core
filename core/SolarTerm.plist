@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>24SolarTerms</key>
+	<array>
+		<string>小寒</string>
+		<string>大寒</string>
+		<string>立春</string>
+		<string>雨水</string>
+		<string>惊蛰</string>
+		<string>春分</string>
+		<string>清明</string>
+		<string>谷雨</string>
+		<string>立夏</string>
+		<string>小满</string>
+		<string>芒种</string>
+		<string>夏至</string>
+		<string>小暑</string>
+		<string>大暑</string>
+		<string>立秋</string>
+		<string>处暑</string>
+		<string>白露</string>
+		<string>秋分</string>
+		<string>寒露</string>
+		<string>霜降</string>
+		<string>立冬</string>
+		<string>小雪</string>
+		<string>大雪</string>
+		<string>冬至</string>
+	</array>
+</dict>
+</plist>
