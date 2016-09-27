@@ -405,7 +405,7 @@ public class LunarDate :NSObject{
         return lunarMonthTextArray[value-1]
     }
     
-    var lunarMonthText : String
+    public var lunarMonthText : String
         {
         get
         {
@@ -416,7 +416,7 @@ public class LunarDate :NSObject{
     fileprivate let lunarDayTextArray1 : [String] = ["一","二","三","四","五","六","七","八","九"]
     fileprivate let lunarDayTextArray2 : [String] = ["初","十","廿","卅"]
     
-    var lunarDayText : String
+    public var lunarDayText : String
         {
         get
         {
