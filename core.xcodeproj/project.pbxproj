@@ -12,11 +12,12 @@
 		194A7FB71D942801007F9E8F /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 194A7FA91D942801007F9E8F /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		194A80041D942940007F9E8F /* LunarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A80001D942940007F9E8F /* LunarDate.swift */; };
 		194A80051D942940007F9E8F /* LunarSolarTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A80011D942940007F9E8F /* LunarSolarTerm.swift */; };
-		194A80061D942940007F9E8F /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A80021D942940007F9E8F /* NSDateExtension.swift */; };
+		194A80061D942940007F9E8F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A80021D942940007F9E8F /* DateExtension.swift */; };
 		194A80071D942940007F9E8F /* CelestialStem&Terrestrial.json in Resources */ = {isa = PBXBuildFile; fileRef = 194A80031D942940007F9E8F /* CelestialStem&Terrestrial.json */; };
 		1963AB531D9AC7030002A92B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AB521D9AC7030002A92B /* Message.swift */; };
 		19B791E11D956CA4003044EC /* SolarTerm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19B791E01D956CA4003044EC /* SolarTerm.plist */; };
 		19D8CA751D9CFDBF003534BD /* ApplicationResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA741D9CFDBF003534BD /* ApplicationResource.swift */; };
+		19D8CA771D9DE7B5003534BD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA761D9DE7B5003534BD /* StringExtension.swift */; };
 		19E6C5431D9683CA00E5160A /* BaZiGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6C5421D9683CA00E5160A /* BaZiGenerator.swift */; };
 		19E6C5451D9697AA00E5160A /* DefaultData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19E6C5441D9697AA00E5160A /* DefaultData.plist */; };
 /* End PBXBuildFile section */
@@ -40,11 +41,12 @@
 		194A7FB61D942801007F9E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		194A80001D942940007F9E8F /* LunarDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LunarDate.swift; path = ../LunarDate.swift; sourceTree = "<group>"; };
 		194A80011D942940007F9E8F /* LunarSolarTerm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LunarSolarTerm.swift; path = ../LunarSolarTerm.swift; sourceTree = "<group>"; };
-		194A80021D942940007F9E8F /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDateExtension.swift; path = ../NSDateExtension.swift; sourceTree = "<group>"; };
+		194A80021D942940007F9E8F /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = ../DateExtension.swift; sourceTree = "<group>"; };
 		194A80031D942940007F9E8F /* CelestialStem&Terrestrial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "CelestialStem&Terrestrial.json"; path = "../CelestialStem&Terrestrial.json"; sourceTree = "<group>"; };
 		1963AB521D9AC7030002A92B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		19B791E01D956CA4003044EC /* SolarTerm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SolarTerm.plist; sourceTree = "<group>"; };
 		19D8CA741D9CFDBF003534BD /* ApplicationResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationResource.swift; sourceTree = "<group>"; };
+		19D8CA761D9DE7B5003534BD /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		19E6C5421D9683CA00E5160A /* BaZiGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaZiGenerator.swift; sourceTree = "<group>"; };
 		19E6C5441D9697AA00E5160A /* DefaultData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +94,8 @@
 				19D8CA741D9CFDBF003534BD /* ApplicationResource.swift */,
 				194A80001D942940007F9E8F /* LunarDate.swift */,
 				194A80011D942940007F9E8F /* LunarSolarTerm.swift */,
-				194A80021D942940007F9E8F /* NSDateExtension.swift */,
+				194A80021D942940007F9E8F /* DateExtension.swift */,
+				19D8CA761D9DE7B5003534BD /* StringExtension.swift */,
 				19E6C5421D9683CA00E5160A /* BaZiGenerator.swift */,
 				1963AB521D9AC7030002A92B /* Message.swift */,
 				194A80031D942940007F9E8F /* CelestialStem&Terrestrial.json */,
@@ -228,7 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				194A80061D942940007F9E8F /* NSDateExtension.swift in Sources */,
+				194A80061D942940007F9E8F /* DateExtension.swift in Sources */,
+				19D8CA771D9DE7B5003534BD /* StringExtension.swift in Sources */,
 				194A80051D942940007F9E8F /* LunarSolarTerm.swift in Sources */,
 				194A80041D942940007F9E8F /* LunarDate.swift in Sources */,
 				1963AB531D9AC7030002A92B /* Message.swift in Sources */,

@@ -5,70 +5,81 @@
             "FiveElement":"木",
             "Suit":"己",
             "Inverse":"庚",
-            "Color":"Green"
+            "Color":"Green",
+            "Grow":"亥"
         },
         "乙": {
             "Property":"阴",
             "FiveElement":"木",
             "Suit":"庚",
             "Inverse":"辛",
-            "Color":"Green"
+            "Color":"Green",
+            "Grow":"午"
+            
         },
         "丙": {
             "Property":"阳",
             "FiveElement":"火",
             "Suit":"辛",
             "Inverse":"壬",
-            "Color":"Red"
+            "Color":"Red",
+            "Grow":"寅"
         },
         "丁": {
             "Property":"阴",
             "FiveElement":"火",
             "Suit":"壬",
             "Inverse":"癸",
-            "Color":"Red"
+            "Color":"Red",
+            "Grow":"酉"
         },
         "戊": {
             "Property":"阳",
             "FiveElement":"土",
             "Suit":"癸",
             "Inverse":"壬",
-            "Color":"Brown"
+            "Color":"Brown",
+            "Grow":"寅"
         },
         "己": {
             "Property":"阴",
             "FiveElement":"土",
             "Suit":"甲",
             "Inverse":"乙",
-            "Color":"Brown"
+            "Color":"Brown",
+            "Grow":"酉"
         },
         "庚": {
             "Property":"阳",
             "FiveElement":"金",
             "Suit":"乙",
             "Inverse":"甲",
-            "Color":"Yellow"
+            "Color":"Yellow",
+            "Grow":"巳"
         },
         "辛": {
             "Property":"阴",
             "FiveElement":"金",
             "Suit":"丙",
             "Inverse":"乙",
-            "Color":"Yellow"
+            "Color":"Yellow",
+            "Grow":"子"
         },
         "壬": {
             "Property":"阳",
             "FiveElement":"水",
             "Suit":"丁",
             "Inverse":"戊",
-            "Color":"Blue"
+            "Color":"Blue",
+            "Grow":"申"
         },
         "癸": {
             "Property":"阴",
             "FiveElement":"水",
             "Suit":"戊",
             "Inverse":"丁",
-            "Color":"Blue"
+            "Color":"Blue",
+            "Grow":"卯"
         },
     },
     "地支": {
@@ -232,7 +243,7 @@
                     "FiveElement":"金",
                     "Color":"Yellow"
                 },
-            "HiddenSteam":"戊庚壬"
+            "HiddenSteam":"庚壬戊"
         },
         "酉":{
             "Property":"阴",

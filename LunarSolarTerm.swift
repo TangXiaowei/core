@@ -13,49 +13,49 @@ public class LunarSolarTerm: LunarDate {
     
     static let solarTermNames : [String] = ["小寒", "大寒", "立春", "雨水", "惊蛰", "春分", "清明", "谷雨", "立夏", "小满", "芒种", "夏至","小暑", "大暑", "立秋", "处暑", "白露", "秋分", "寒露", "霜降", "立冬", "小雪", "大雪", "冬至" ]
     
-    let celestialStemName : String = "癸甲乙丙丁戊己庚辛壬"
-    let terrestialBranchName : String = "亥子丑寅卯辰巳午未申酉戌"
+    static let celestialStemName : String = "癸甲乙丙丁戊己庚辛壬"
+    static let terrestialBranchName : String = "亥子丑寅卯辰巳午未申酉戌"
 
-    
+    //12个节
     public static let mainSolarTerm : [String] = {
         let result = solarTermNames.enumerated().filter({ x,_ in return (x%2)==0 })
             .map( {_,str in str})
         return result
     }()
     
-    public func getCelestialStemText(_ x:Int) -> String {
+    public class func getCelestialStemText(_ x:Int) -> String {
         let index = x%10
-        return celestialStemName.substring(with: Range<String.Index>(celestialStemName.characters.index(celestialStemName.startIndex, offsetBy: index) ..< celestialStemName.characters.index(celestialStemName.startIndex, offsetBy: index + 1)))
+        return LunarSolarTerm.celestialStemName.subString(beginIndex: index, endIndex: index+1)
     }
     
-    public func getTerrestrialBranchText(_ x:Int) -> String {
+    public class func getTerrestrialBranchText(_ x:Int) -> String {
         let index = x%12
-        return terrestialBranchName.substring(with: Range<String.Index>(terrestialBranchName.characters.index(terrestialBranchName.startIndex, offsetBy: index) ..< terrestialBranchName.characters.index(terrestialBranchName.startIndex, offsetBy: index+1)))
+        return LunarSolarTerm.terrestialBranchName.subString(beginIndex: index, endIndex: index+1)
     }
     
-    public func getEraText(_ x:Int) -> (c:String,t:String) {
+    public class func getEraText(_ x:Int) -> (c:String,t:String) {
         return (getCelestialStemText(x),getTerrestrialBranchText(x))
     }
     
     public func getEraYearText() -> (c:String,t:String) {
         let eraYear = getChineseEraOfYear()
-        return getEraText(eraYear)
+        return LunarSolarTerm.getEraText(eraYear)
     }
     
     public func getEraMonthText() -> (c:String,t:String) {
         let eraMonth = getChineseEraOfMonth()
-        return getEraText(eraMonth)
+        return LunarSolarTerm.getEraText(eraMonth)
     }
     
     public func getEraDayText() -> (c:String,t:String) {
         let eraDay = getChineseEraOfDay()
-        return getEraText(eraDay)
+        return LunarSolarTerm.getEraText(eraDay)
 
     }
     
     public func getEraHourText() -> (c:String,t:String) {
         let eraHour = getChineseEraOfHour()
-        return getEraText(eraHour)
+        return LunarSolarTerm.getEraText(eraHour)
 
     }
     
@@ -108,7 +108,7 @@ public class LunarSolarTerm: LunarDate {
         let begin = month * 2 - 1
         let end = month * 2
         
-        for i in begin ... end {
+        for i in begin ..< end+1 {
             
             let dd = Double(term(year, n: i, pd: true))
             let sd1 = antiDayDifferent(year, x: floor(dd))
@@ -247,6 +247,25 @@ public class LunarSolarTerm: LunarDate {
             v = v + floor((doubleYear-1)/400) + 2
         }
         return v
+    }
+    
+    public class func getBelongXunByEraIndex(index: Int) -> (c:String,t:String)
+    {
+        var paramIndex = index
+        var eraXunEraIndex = 0
+        if paramIndex != 0 {
+            while paramIndex != 0 {
+                if paramIndex % 10 == 1 {
+                    eraXunEraIndex = paramIndex
+                    break
+                }
+                paramIndex = paramIndex - 1
+            }
+        }else{
+            eraXunEraIndex = paramIndex
+        }
+        
+        return LunarSolarTerm.getEraText(eraXunEraIndex)
     }
 }
 

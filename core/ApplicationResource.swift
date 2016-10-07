@@ -81,6 +81,22 @@ public class ApplicationResource: NSObject {
         return getTerrestialPropertyBy(name)["HiddenSteam"] as! String
     }
     
+    public func getThreeSuitByTerrestial(_ name:String) -> Dictionary<String,AnyObject>
+    {
+        let dic = getTerrestialPropertyBy(name)["ThreeSuit"] as! Dictionary<String,AnyObject>
+        return dic
+    }
+    
+    public func getThreeSuitNamesByTerrestial(_ name:String) -> Array<String>{
+        let strOthers = getThreeSuitByTerrestial(name)["OthersTwo"] as! String
+        var array = Array<String>()
+        for s in (strOthers+name).characters
+        {
+            array.append(s.description)
+        }
+        return array
+    }
+    
     public let colorDictionary : Dictionary<String,UIColor> = [
         "Red":UIColor.red,
         "Yellow":UIColor(red: 255/255, green: 215/255, blue: 0/255, alpha: 1),
@@ -122,6 +138,30 @@ public class ApplicationResource: NSObject {
         }else{
             return sixRelationDic["support"]![flag] as! String
         }
-
+    }
+    
+    public func get4WangTerrestrials() ->Array<AnyObject>
+    {
+        let array = defaultDataDic["四旺"] as! Array<AnyObject>
+        return array
+    }
+    
+    public func getNaYinByEraText(_ eraText:String) -> String
+    {
+        let dic = defaultDataDic["纳音"] as! Dictionary<String,AnyObject>
+        return dic[eraText] as! String
+    }
+    
+    public func getColorByFiveElement(_ fiveElement:String) -> UIColor
+    {
+        let dic = defaultDataDic["FiveElementColor"] as! Dictionary<String,AnyObject>
+        let strColor = dic[fiveElement] as! String
+        return colorDictionary[strColor]!
+    }
+    
+    public func getTwelveGrows()-> Array<AnyObject>
+    {
+        let array = defaultDataDic["TwelveGrows"] as! Array<AnyObject>
+        return array
     }
 }
