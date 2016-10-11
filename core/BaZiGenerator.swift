@@ -268,10 +268,10 @@ public class BaZiGenerator
         })
     }
     
-    public func getJiaGong(eraText1:String,eraText2:String) -> String {
+    public func getJiaGong(eraText1:String,eraText2:String) -> (t1:String,t2:String, jiaGong:String) {
         
         guard !eraText1.isEmpty && !eraText2.isEmpty else {
-            return ""
+            return ("","","")
         }
         
         let c1 = eraText1.subString(beginIndex: 0, endIndex:1)
@@ -286,7 +286,7 @@ public class BaZiGenerator
             if let suitT1 = getThreeSuitExceptName(t1: t1, t2: t2)
             {
                 if is4Wang(t: suitT1) {
-                    return suitT1
+                    return (t1,t2,suitT1)
                 }
             }
             
@@ -295,20 +295,20 @@ public class BaZiGenerator
             let indexT2 = LunarSolarTerm.terrestialBranchName.firstIndexOf(str: t2)
             
             if indexT1 + 2 == indexT2 {
-                return LunarSolarTerm.terrestialBranchName.subStringAt(indexOf: indexT1+1)
+                return (t1,t2, LunarSolarTerm.terrestialBranchName.subStringAt(indexOf: indexT1+1))
             }
             if indexT1 - 2 == indexT2 {
-                return LunarSolarTerm.terrestialBranchName.subStringAt(indexOf: indexT2+1)
+                return  (t1,t2,LunarSolarTerm.terrestialBranchName.subStringAt(indexOf: indexT2+1))
             }
             if (indexT1 == 11 && indexT2 == 1) || (indexT1==1 && indexT2 == 11) {
-                return LunarSolarTerm.terrestialBranchName.subStringAt(indexOf: 0)
+                return (t1,t2,LunarSolarTerm.terrestialBranchName.subStringAt(indexOf: 0))
             }
             if (indexT1 == 10 && indexT2 == 0) || (indexT2==10 && indexT1 == 10) {
-                return LunarSolarTerm.terrestialBranchName.subStringAt(indexOf: 11)
+                return (t1,t2,LunarSolarTerm.terrestialBranchName.subStringAt(indexOf: 11))
             }
         }
         
-        return ""
+        return (t1,t2,"")
     }
 }
 
@@ -331,3 +331,4 @@ public class EraObject : NSObject {
     public var t : String!
     public var year : Int!
 }
+

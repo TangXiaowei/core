@@ -97,6 +97,24 @@ public class ApplicationResource: NSObject {
         return array
     }
     
+    public func getThreeConverageByTerrestial(_ name:String) -> Dictionary<String,AnyObject>
+    {
+        let dic = getTerrestialPropertyBy(name)["ThreeConverage"] as! Dictionary<String,AnyObject>
+        return dic
+    }
+    
+    public func getThreeConverageNamesByTerrestial(_ name:String) -> Array<String>{
+        let strOthers = getThreeConverageByTerrestial(name)["OthersTwo"] as! String
+        var array = Array<String>()
+        for s in (strOthers+name).characters
+        {
+            array.append(s.description)
+        }
+        return array
+    }
+    
+    
+    
     public let colorDictionary : Dictionary<String,UIColor> = [
         "Red":UIColor.red,
         "Yellow":UIColor(red: 255/255, green: 215/255, blue: 0/255, alpha: 1),
