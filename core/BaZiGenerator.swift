@@ -268,17 +268,11 @@ public class BaZiGenerator
         })
     }
     
-    public func getJiaGong(eraText1:String,eraText2:String) -> (t1:String,t2:String, jiaGong:String) {
+    public func getJiaGong(t1:String,t2:String,c1:String,c2:String) -> (t1:String,t2:String, jiaGong:String) {
         
-        guard !eraText1.isEmpty && !eraText2.isEmpty else {
+        guard !t1.isEmpty && !t2.isEmpty && !c1.isEmpty && !c2.isEmpty else {
             return ("","","")
         }
-        
-        let c1 = eraText1.subString(beginIndex: 0, endIndex:1)
-        let t1 = eraText1.subString(beginIndex: 1)
-        
-        let c2 = eraText2.subString(beginIndex: 0, endIndex:1)
-        let t2 = eraText2.subString(beginIndex: 1)
         
         if c1 == c2 && t1 != t2 {
             
