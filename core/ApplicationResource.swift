@@ -24,15 +24,17 @@ public class ApplicationResource: NSObject {
         
         super.init()
         
-        let bundle : Bundle = Bundle.main
-        let jsonPath = bundle.path(forResource: "core.framework/CelestialStem&Terrestrial.json", ofType: nil)
+        let bundle : Bundle = Bundle.init(for: ApplicationResource.self)
+        let settingBundlePath = bundle.path(forResource: "Settings", ofType: "bundle")
+        
+        let jsonPath = Bundle(path: settingBundlePath!)?.path(forResource: "CelestialStem&Terrestrial", ofType: "json")
         let jsonData = try? Data.init(contentsOf: URL(fileURLWithPath: jsonPath!))
         
         do
         {
             jsonSource = try JSONSerialization.jsonObject(with: jsonData!, options: .mutableContainers) as! Dictionary<String,AnyObject>
         
-            let defaultDataPath = bundle.path(forResource: "core.framework/DefaultData", ofType: "plist")
+            let defaultDataPath = Bundle(path: settingBundlePath!)?.path(forResource: "DefaultData", ofType: "plist")
             defaultDataDic = NSMutableDictionary(contentsOfFile: defaultDataPath!) as! Dictionary<String,AnyObject>
 
         }

@@ -4,10 +4,19 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Aggregate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>core.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +27,11 @@
 			<true/>
 		</dict>
 		<key>194A7FAE1D942801007F9E8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>198E0AEA1DB639AF00F9DC80</key>
 		<dict>
 			<key>primary</key>
 			<true/>

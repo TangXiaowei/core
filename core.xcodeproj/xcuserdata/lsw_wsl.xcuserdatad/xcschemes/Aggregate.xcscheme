@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "194A7FA51D942801007F9E8F"
-               BuildableName = "core.framework"
-               BlueprintName = "core"
+               BlueprintIdentifier = "198E0AEA1DB639AF00F9DC80"
+               BuildableName = "Aggregate"
+               BlueprintName = "Aggregate"
                ReferencedContainer = "container:core.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "194A7FA51D942801007F9E8F"
-            BuildableName = "core.framework"
-            BlueprintName = "core"
+            BlueprintIdentifier = "198E0AEA1DB639AF00F9DC80"
+            BuildableName = "Aggregate"
+            BlueprintName = "Aggregate"
             ReferencedContainer = "container:core.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "194A7FA51D942801007F9E8F"
-            BuildableName = "core.framework"
-            BlueprintName = "core"
+            BlueprintIdentifier = "198E0AEA1DB639AF00F9DC80"
+            BuildableName = "Aggregate"
+            BlueprintName = "Aggregate"
             ReferencedContainer = "container:core.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
