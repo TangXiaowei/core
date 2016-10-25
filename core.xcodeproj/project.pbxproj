@@ -29,6 +29,7 @@
 		194A80061D942940007F9E8F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A80021D942940007F9E8F /* DateExtension.swift */; };
 		1963AB531D9AC7030002A92B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AB521D9AC7030002A92B /* Message.swift */; };
 		197FC99C1DB4B59E00F3CDDE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 197FC99B1DB4B59E00F3CDDE /* Settings.bundle */; };
+		199EA0EC1DBB2EED009BECD0 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EA0EB1DBB2EED009BECD0 /* IAPHelper.swift */; };
 		19D8CA751D9CFDBF003534BD /* ApplicationResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA741D9CFDBF003534BD /* ApplicationResource.swift */; };
 		19D8CA771D9DE7B5003534BD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA761D9DE7B5003534BD /* StringExtension.swift */; };
 		19E6C5431D9683CA00E5160A /* BaZiGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6C5421D9683CA00E5160A /* BaZiGenerator.swift */; };
@@ -63,6 +64,8 @@
 		194A80021D942940007F9E8F /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = ../DateExtension.swift; sourceTree = "<group>"; };
 		1963AB521D9AC7030002A92B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		197FC99B1DB4B59E00F3CDDE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
+		199EA0E81DBB1C0E009BECD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		199EA0EB1DBB2EED009BECD0 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		19D8CA741D9CFDBF003534BD /* ApplicationResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationResource.swift; sourceTree = "<group>"; };
 		19D8CA761D9DE7B5003534BD /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		19E6C5421D9683CA00E5160A /* BaZiGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaZiGenerator.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 				194A7FA81D942801007F9E8F /* core */,
 				194A7FB31D942801007F9E8F /* coreTests */,
 				194A7FA71D942801007F9E8F /* Products */,
+				199EA0E71DBB1C0E009BECD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +111,7 @@
 		194A7FA81D942801007F9E8F /* core */ = {
 			isa = PBXGroup;
 			children = (
+				199EA0EA1DBB1DD9009BECD0 /* IAP */,
 				197FC99B1DB4B59E00F3CDDE /* Settings.bundle */,
 				19D8CA741D9CFDBF003534BD /* ApplicationResource.swift */,
 				194A80001D942940007F9E8F /* LunarDate.swift */,
@@ -128,6 +133,22 @@
 				194A7FB61D942801007F9E8F /* Info.plist */,
 			);
 			path = coreTests;
+			sourceTree = "<group>";
+		};
+		199EA0E71DBB1C0E009BECD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				199EA0E81DBB1C0E009BECD0 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		199EA0EA1DBB1DD9009BECD0 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				199EA0EB1DBB2EED009BECD0 /* IAPHelper.swift */,
+			);
+			name = IAP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +288,7 @@
 				19D8CA771D9DE7B5003534BD /* StringExtension.swift in Sources */,
 				194A80051D942940007F9E8F /* LunarSolarTerm.swift in Sources */,
 				194A80041D942940007F9E8F /* LunarDate.swift in Sources */,
+				199EA0EC1DBB2EED009BECD0 /* IAPHelper.swift in Sources */,
 				1963AB531D9AC7030002A92B /* Message.swift in Sources */,
 				19D8CA751D9CFDBF003534BD /* ApplicationResource.swift in Sources */,
 				19E6C5431D9683CA00E5160A /* BaZiGenerator.swift in Sources */,

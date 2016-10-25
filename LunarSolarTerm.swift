@@ -270,6 +270,6 @@ public class LunarSolarTerm: LunarDate {
 }
 
 public struct SolarTerm {
-    var date : Date
-    var name : String
+    public var date : Date
+    public var name : String
 }
