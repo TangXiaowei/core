@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		191F8E741DC461A8008BE9E9 /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F8E731DC461A8008BE9E9 /* DefaultValue.swift */; };
+		191F8E761DC4CCF9008BE9E9 /* HexagramBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F8E751DC4CCF9008BE9E9 /* HexagramBuilder.swift */; };
 		194A7FB51D942801007F9E8F /* coreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A7FB41D942801007F9E8F /* coreTests.swift */; };
 		194A7FB71D942801007F9E8F /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 194A7FA91D942801007F9E8F /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		194A80041D942940007F9E8F /* LunarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A80001D942940007F9E8F /* LunarDate.swift */; };
@@ -30,6 +32,7 @@
 		1963AB531D9AC7030002A92B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AB521D9AC7030002A92B /* Message.swift */; };
 		197FC99C1DB4B59E00F3CDDE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 197FC99B1DB4B59E00F3CDDE /* Settings.bundle */; };
 		199EA0EC1DBB2EED009BECD0 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EA0EB1DBB2EED009BECD0 /* IAPHelper.swift */; };
+		19B3DD191DC4DFB000B39B21 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3DD181DC4DFB000B39B21 /* Utility.swift */; };
 		19D8CA751D9CFDBF003534BD /* ApplicationResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA741D9CFDBF003534BD /* ApplicationResource.swift */; };
 		19D8CA771D9DE7B5003534BD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA761D9DE7B5003534BD /* StringExtension.swift */; };
 		19E6C5431D9683CA00E5160A /* BaZiGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6C5421D9683CA00E5160A /* BaZiGenerator.swift */; };
@@ -53,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		191F8E731DC461A8008BE9E9 /* DefaultValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultValue.swift; sourceTree = "<group>"; };
+		191F8E751DC4CCF9008BE9E9 /* HexagramBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagramBuilder.swift; sourceTree = "<group>"; };
 		194A7FA61D942801007F9E8F /* core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		194A7FA91D942801007F9E8F /* core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
 		194A7FAA1D942801007F9E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		197FC99B1DB4B59E00F3CDDE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		199EA0E81DBB1C0E009BECD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		199EA0EB1DBB2EED009BECD0 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		19B3DD181DC4DFB000B39B21 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		19D8CA741D9CFDBF003534BD /* ApplicationResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationResource.swift; sourceTree = "<group>"; };
 		19D8CA761D9DE7B5003534BD /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		19E6C5421D9683CA00E5160A /* BaZiGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaZiGenerator.swift; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 				1963AB521D9AC7030002A92B /* Message.swift */,
 				194A7FA91D942801007F9E8F /* core.h */,
 				194A7FAA1D942801007F9E8F /* Info.plist */,
+				191F8E731DC461A8008BE9E9 /* DefaultValue.swift */,
+				191F8E751DC4CCF9008BE9E9 /* HexagramBuilder.swift */,
+				19B3DD181DC4DFB000B39B21 /* Utility.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -285,9 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				194A80061D942940007F9E8F /* DateExtension.swift in Sources */,
+				19B3DD191DC4DFB000B39B21 /* Utility.swift in Sources */,
 				19D8CA771D9DE7B5003534BD /* StringExtension.swift in Sources */,
 				194A80051D942940007F9E8F /* LunarSolarTerm.swift in Sources */,
 				194A80041D942940007F9E8F /* LunarDate.swift in Sources */,
+				191F8E761DC4CCF9008BE9E9 /* HexagramBuilder.swift in Sources */,
+				191F8E741DC461A8008BE9E9 /* DefaultValue.swift in Sources */,
 				199EA0EC1DBB2EED009BECD0 /* IAPHelper.swift in Sources */,
 				1963AB531D9AC7030002A92B /* Message.swift in Sources */,
 				19D8CA751D9CFDBF003534BD /* ApplicationResource.swift in Sources */,
