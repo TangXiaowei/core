@@ -69,6 +69,11 @@ public class BaZiGenerator
     
     private func getYunFlowYears() -> Dictionary<EraObject,Array<EraObject>>
     {
+        //因为生日有可能是在1，2月年柱还在上一年，所以不能用生日得流年
+        let pDate = Date(year: self.birthday.year, month: 6, day: 1)
+        let pSolarDate = LunarSolarTerm(paramDate: pDate)
+        let pYearEraIndex = pSolarDate.getChineseEraOfYear()
+        
         let solarDate = LunarSolarTerm(paramDate: self.birthday)
         
         let yearEraIndex = solarDate.getChineseEraOfYear()
@@ -99,7 +104,7 @@ public class BaZiGenerator
             {
                 
                 let flowYear = birthdayYear + beginYunYearIndex + j + yearPreFix
-                let strFlowYearText = LunarSolarTerm.getEraText(yearEraIndex+j+beginYunYearIndex+yearPreFix)
+                let strFlowYearText = LunarSolarTerm.getEraText(pYearEraIndex+j+beginYunYearIndex+yearPreFix)
                 let result = EraObject(c: strFlowYearText.c, t: strFlowYearText.t, year: flowYear)
                 flowYearList.append(result)
             }
@@ -115,6 +120,19 @@ public class BaZiGenerator
     public class func fixEraIndex(index:Int) -> Int{
         let yearIndex = 59
         return index < 0 ? (yearIndex + index) : index
+    }
+    
+    public func getBeginYunAgeMonth() -> (age:Int, months:Int, isForward:Bool)
+    {
+        let solarDate = LunarSolarTerm(paramDate: self.birthday)
+        
+        let yearEraIndex = solarDate.getChineseEraOfYear()
+        let monthEraIndex = solarDate.getChineseEraOfMonth()
+        
+        let isForward = BaZiGenerator.isForward(yearEraIndex: yearEraIndex, isMale: isMale)
+        let daYunObj = BaZiGenerator.getBeginDaYunAgeMonth(date: self.birthday, isForward: isForward )
+
+        return (daYunObj.age,daYunObj.months,isForward)
     }
     
     public class func getBeginDaYunAgeMonth(date:Date, isForward:Bool) -> (age:Int, months:Int)
