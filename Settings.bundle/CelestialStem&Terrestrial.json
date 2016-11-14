@@ -119,7 +119,8 @@
                     "Color":"Blue"
                 },
             "HiddenSteam":"己癸辛",
-            "Punish":"戌"
+            "Punish":"戌",
+            "ThreePunish":"未戌"
         },
         "寅":{
             "Property":"阳",
@@ -138,7 +139,8 @@
                     "Color":"Green"
                 },
             "HiddenSteam":"甲丙戊",
-            "Punish":"巳"
+            "Punish":"巳",
+            "ThreePunish":"巳申"
         },
         "卯":{
             "Property":"阴",
@@ -195,7 +197,8 @@
                     "Color":"Red"
                 },
             "HiddenSteam":"丙戊庚",
-            "Punish":"申"
+            "Punish":"申",
+            "ThreePunish":"寅申"
         },
         "午":{
             "Property":"阳",
@@ -233,7 +236,8 @@
                     "Color":"Red"
                 },
             "HiddenSteam":"己丁乙",
-            "Punish":"丑"
+            "Punish":"丑",
+            "ThreePunish":"丑戌"
         },
         "申":{
             "Property":"阳",
@@ -252,7 +256,8 @@
                     "Color":"Yellow"
                 },
             "HiddenSteam":"庚壬戊",
-            "Punish":"寅"
+            "Punish":"寅",
+            "ThreePunish":"寅巳"
         },
         "酉":{
             "Property":"阴",
@@ -290,7 +295,8 @@
                     "Color":"Yellow"
                 },
             "HiddenSteam":"戊辛丁",
-            "Punish":"未"
+            "Punish":"未",
+            "ThreePunish":"丑戌"
         },
         "亥":{
             "Property":"阴",
