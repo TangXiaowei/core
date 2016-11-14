@@ -116,6 +116,19 @@ public class ApplicationResource: NSObject {
         return array
     }
     
+    public func getThreePunishByTerrestial(_ name:String) -> Array<String>?
+    {
+        if getTerrestialPropertyBy(name).keys.contains("ThreePunish"){
+            let threePunish = getTerrestialPropertyBy(name)["ThreePunish"] as! String
+            var array = Array<String>()
+            for s in (threePunish+name).characters
+            {
+                array.append(s.description)
+            }
+            return array
+        }
+        return nil
+    }
     
     
     public let colorDictionary : Dictionary<String,UIColor> = [

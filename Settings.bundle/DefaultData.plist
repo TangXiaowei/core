@@ -9,11 +9,11 @@
 		<string>卯</string>
 		<string>酉</string>
 	</array>
-	<key>四长生</key>
+	<key>四生</key>
 	<array>
 		<string>寅</string>
 		<string>申</string>
-		<string>巳</string>	
+		<string>巳</string>
 		<string>亥</string>
 	</array>
 	<key>TwelveGrows</key>
